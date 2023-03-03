@@ -90,14 +90,14 @@ body {
 }
 
 .logo {
-  display: inline-block;
+  display: flex;
   max-width: 100%;
   height: auto;
   position: relative;
 }
 
 .logo img {
-  display: block;
+  display: flex;
   max-width: 100%;
   height: auto;
   position: relative;
@@ -105,8 +105,17 @@ body {
 
 @media (max-width: 768px) {
   .logo img {
+    display: flex;
     width: 80%;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    order: -1;
   }
 }
 
@@ -3087,8 +3096,16 @@ textarea.form-control-lg {
 }
 @media (max-width: 768px) {
   .btn-primary {
+    display: flex;
     width: 80%;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 }
 @keyframes fadeIn {
@@ -4131,7 +4148,13 @@ textarea.form-control-lg {
 }
 @media (max-width: 768px) {
   .navbar-brand {
+    display: flex;
     width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  
   }
 }
 .navbar-nav {
